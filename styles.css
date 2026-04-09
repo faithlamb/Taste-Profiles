@@ -44,3 +44,31 @@ footer {
     padding: 20px;
     line-height: 1.6;
 }
+
+.profile-description {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.question-block label {
+    display: block;
+    margin: 5px 0;
+}
+
+#submit-btn {
+    padding: 12px 20px;
+    background: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
