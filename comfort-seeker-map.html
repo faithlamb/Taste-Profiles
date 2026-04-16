@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_51578474100607012c98d017fd672104 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_51578474100607012c98d017fd672104" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_51578474100607012c98d017fd672104 = L.map(
+                "map_51578474100607012c98d017fd672104",
+                {
+                    center: [33.9016213, -96.86823512000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_82ec9f3cf9bf05d434fe1a6130c2ae7e = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/flamb22/cmnetkc1u001f01s8dpsd8v2m/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmxhbWIyMiIsImEiOiJjbWx0cXJzbGwwMzNsM2xwbmZqaWw2Zjk3In0.Lo4lEcg-rbCpdEAbAzyh2w",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_82ec9f3cf9bf05d434fe1a6130c2ae7e.addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var marker_0c9e2c76cda671840747bd7ab12722bd = L.marker(
+                [25.7890685, -80.1401579],
+                {
+}
+            ).addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var icon_361960b1745c26ed8685b9b12e03255c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c53b7a8dd4b5a463a86454db3ddd0990 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d43c1440888f3bac3b32b87c5b94f816 = $(`<div id="html_d43c1440888f3bac3b32b87c5b94f816" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Yardbird Table & Bar</h4> 	  <p style="margin:0 0 6px 0;"><strong>1600 Lenox Ave</strong><br>Miami Beach, FL</p> 	  <img src="https://www.droolius.com/wp-content/uploads/2012/04/Yardbird_MiamiBrunch_14.jpg" alt="Yardbird Table & Bar" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Yardbird is a Southern comfort classic, famous for its fried chicken, biscuits, and warm, rustic atmosphere. The menu is hearty and nostalgic, offering dishes that feel like home. It's cozy, welcoming, and perfect for comfort-driven diners.</p> 	</div> 	</div>`)[0];
+                popup_c53b7a8dd4b5a463a86454db3ddd0990.setContent(html_d43c1440888f3bac3b32b87c5b94f816);
+            
+        
+
+        marker_0c9e2c76cda671840747bd7ab12722bd.bindPopup(popup_c53b7a8dd4b5a463a86454db3ddd0990)
+        ;
+
+        
+    
+    
+            marker_0c9e2c76cda671840747bd7ab12722bd.bindTooltip(
+                `<div>
+                     Yardbird Table & Bar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c9e2c76cda671840747bd7ab12722bd.setIcon(icon_361960b1745c26ed8685b9b12e03255c);
+            
+    
+            var marker_381770e88dfd2e4cc39df553cd1f23c9 = L.marker(
+                [40.7299881, -74.0007016],
+                {
+}
+            ).addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var icon_03891cfaebf9a9d3833e982e0f305e60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705144563d9953fa02fa66ea65d8b8fa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_40b5af4e607f303559baf70e6c724b54 = $(`<div id="html_40b5af4e607f303559baf70e6c724b54" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Minetta Tavern</h4> 	  <p style="margin:0 0 6px 0;"><strong>113 MacDougal St</strong><br>New York, NY</p> 	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgD2jQ2CVTBnkKifAHmH_RN6quiFaLVzb74Q&s" alt="Minetta Tavern" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Minetta Tavern blends old-New-York charm with elevated comfort dishes like its iconic Black Label Burger. The dim lighting, vintage decor, and intimate booths create a warm, nostalgic atmosphere. It's a quintessential comfort-food destination.</p> 	</div> 	</div>`)[0];
+                popup_705144563d9953fa02fa66ea65d8b8fa.setContent(html_40b5af4e607f303559baf70e6c724b54);
+            
+        
+
+        marker_381770e88dfd2e4cc39df553cd1f23c9.bindPopup(popup_705144563d9953fa02fa66ea65d8b8fa)
+        ;
+
+        
+    
+    
+            marker_381770e88dfd2e4cc39df553cd1f23c9.bindTooltip(
+                `<div>
+                     Minetta Tavern
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_381770e88dfd2e4cc39df553cd1f23c9.setIcon(icon_03891cfaebf9a9d3833e982e0f305e60);
+            
+    
+            var marker_ee8d0a4c6524d4c2cd1c5488f9e8f5fd = L.marker(
+                [32.782215, -96.7979407],
+                {
+}
+            ).addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var icon_9ce7d7de2f69fbefa0771881df32bea9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7872d728753827b7ba3df4015600e425 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_57fd6470eab1f7cd04fceb3cf18cf36f = $(`<div id="html_57fd6470eab1f7cd04fceb3cf18cf36f" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Fond</h4> 	  <p style="margin:0 0 6px 0;"><strong>1601 Elm St Suite 110</strong><br>Dallas, TX</p> 	  <img src="https://res.cloudinary.com/the-infatuation/image/upload/v1739927947/Fond_Dallas_Kathy_Tran_035_vv6lm2.jpg" alt="Fond" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Fond serves homey, comforting dishes with a refined touch in a cozy, neighborhood-style setting. The menu features warm, familiar flavors elevated with thoughtful technique. It's a perfect retreat for diners seeking calm and comfort.</p> 	</div> 	</div>`)[0];
+                popup_7872d728753827b7ba3df4015600e425.setContent(html_57fd6470eab1f7cd04fceb3cf18cf36f);
+            
+        
+
+        marker_ee8d0a4c6524d4c2cd1c5488f9e8f5fd.bindPopup(popup_7872d728753827b7ba3df4015600e425)
+        ;
+
+        
+    
+    
+            marker_ee8d0a4c6524d4c2cd1c5488f9e8f5fd.bindTooltip(
+                `<div>
+                     Fond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee8d0a4c6524d4c2cd1c5488f9e8f5fd.setIcon(icon_9ce7d7de2f69fbefa0771881df32bea9);
+            
+    
+            var marker_6e297331c407611d28574d0addef7651 = L.marker(
+                [36.1568043, -115.1538393],
+                {
+}
+            ).addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var icon_4bd3e6e1f92f06815b9d943f9fb13413 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be479a59f79862477db5a1eb62090223 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6c537c2f2b3be9324937d5aaa4267fb5 = $(`<div id="html_6c537c2f2b3be9324937d5aaa4267fb5" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Main St. Provisions</h4> 	  <p style="margin:0 0 6px 0;"><strong>1214 S Main St</strong><br>Las Vegas, NV</p> 	  <img src="https://npr.brightspotcdn.com/dims4/default/293d843/2147483647/strip/true/crop/1440%C3%971080+0+0/resize/880x660!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd1%2F1f%2F9ae6a860421f9e97b5b1f5189c3a%2F328995605-843800396685168-3316649993969494303-n.jpg" alt="Main St. Provisions" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Main St. Provisions offers hearty comfort food with modern twists in a stylish yet inviting space. The open kitchen and warm service create a welcoming neighborhood feel. It's a standout for comforting, soulful dishes off the Strip.</p> 	</div> 	</div>`)[0];
+                popup_be479a59f79862477db5a1eb62090223.setContent(html_6c537c2f2b3be9324937d5aaa4267fb5);
+            
+        
+
+        marker_6e297331c407611d28574d0addef7651.bindPopup(popup_be479a59f79862477db5a1eb62090223)
+        ;
+
+        
+    
+    
+            marker_6e297331c407611d28574d0addef7651.bindTooltip(
+                `<div>
+                     Main St. Provisions
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e297331c407611d28574d0addef7651.setIcon(icon_4bd3e6e1f92f06815b9d943f9fb13413);
+            
+    
+            var marker_89a75adae9b13e11b98728d0225282da = L.marker(
+                [34.0500306, -118.2485361],
+                {
+}
+            ).addTo(map_51578474100607012c98d017fd672104);
+        
+    
+            var icon_a37ed70ee041a917dd4a5f6670d2f347 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73ae9d71e080b5cf64d6a9403484b525 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fed985d483f4598ba571be6f9c66e1b1 = $(`<div id="html_fed985d483f4598ba571be6f9c66e1b1" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Maccheroni Republic</h4> 	  <p style="margin:0 0 6px 0;"><strong>332 S Broadway</strong><br>Los Angeles, CA</p> 	  <img src="https://dtlaexplorer.wordpress.com/wp-content/uploads/2015/04/img_8941.jpg" alt="Maccheroni Republic" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Maccheroni Republic is a beloved Italian spot known for its handmade pastas and homey, relaxed atmosphere. The BYO wine policy and cozy patio make it feel like a true neighborhood favorite. It's pure comfort in the heart of downtown LA.</p> 	</div> 	</div>`)[0];
+                popup_73ae9d71e080b5cf64d6a9403484b525.setContent(html_fed985d483f4598ba571be6f9c66e1b1);
+            
+        
+
+        marker_89a75adae9b13e11b98728d0225282da.bindPopup(popup_73ae9d71e080b5cf64d6a9403484b525)
+        ;
+
+        
+    
+    
+            marker_89a75adae9b13e11b98728d0225282da.bindTooltip(
+                `<div>
+                     Maccheroni Republic
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89a75adae9b13e11b98728d0225282da.setIcon(icon_a37ed70ee041a917dd4a5f6670d2f347);
+            
+</script>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5e99c81c9c73e6bdeea85acbb4e55ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c5e99c81c9c73e6bdeea85acbb4e55ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c5e99c81c9c73e6bdeea85acbb4e55ac = L.map(
+                "map_c5e99c81c9c73e6bdeea85acbb4e55ac",
+                {
+                    center: [33.8859153, -96.90131194],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_095b79c328f19e94f1521d9d77e5da52 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/flamb22/cmnetkc1u001f01s8dpsd8v2m/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmxhbWIyMiIsImEiOiJjbWx0cXJzbGwwMzNsM2xwbmZqaWw2Zjk3In0.Lo4lEcg-rbCpdEAbAzyh2w",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_095b79c328f19e94f1521d9d77e5da52.addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var marker_a127db9c05f0b0359dab7cd9e60e887c = L.marker(
+                [25.7853295, -80.2196917],
+                {
+}
+            ).addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var icon_6dbf67cef8cc1e77cfead26db984b779 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_894c42d2aaef2943ed85886235892944 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e1a50ab6cc2c070fd2a2342b6d0fd405 = $(`<div id="html_e1a50ab6cc2c070fd2a2342b6d0fd405" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Tanuki River Landing</h4> 	  <p style="margin:0 0 6px 0;"><strong>1420 NW N River Dr</strong><br>Miami, FL</p> 	  <img src="https://images.squarespace-cdn.com/content/v1/640770e92dc69666974a8e37/62855f2d-b763-41cd-b7a0-a2f367e2ebcf/DSCF9296.jpg" alt="Tanuki River Landing" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Tanuki River Landing serves bold, eclectic Asian fusion dishes with vibrant flavors and creative presentations. The waterfront setting adds to the sense of adventure and discovery. It's ideal for diners seeking something unexpected.</p> 	</div> 	</div>`)[0];
+                popup_894c42d2aaef2943ed85886235892944.setContent(html_e1a50ab6cc2c070fd2a2342b6d0fd405);
+            
+        
+
+        marker_a127db9c05f0b0359dab7cd9e60e887c.bindPopup(popup_894c42d2aaef2943ed85886235892944)
+        ;
+
+        
+    
+    
+            marker_a127db9c05f0b0359dab7cd9e60e887c.bindTooltip(
+                `<div>
+                     Tanuki River Landing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a127db9c05f0b0359dab7cd9e60e887c.setIcon(icon_6dbf67cef8cc1e77cfead26db984b779);
+            
+    
+            var marker_5ecdc067566290d6bf6e2a7e530c8d19 = L.marker(
+                [40.7191167, -74.0001861],
+                {
+}
+            ).addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var icon_0a29d9239baee5bdd2ca94dbc2f57a12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c1c7712ae78fa6382ccf4f0b3ab10ca = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5852d1b204305eb74b11de23800495fb = $(`<div id="html_5852d1b204305eb74b11de23800495fb" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Le Coucou</h4> 	  <p style="margin:0 0 6px 0;"><strong>138 Lafayette St</strong><br>New York, NY</p> 	  <img src="https://lecoucou.com/wp-content/uploads/sites/19/2023/12/L_Palmberg_LeCouCou_004-1024x683.jpg" alt="Le Coucou" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Le Coucou offers refined French cuisine with adventurous dishes like rabbit, foie gras, and lobster prepared with classic technique. The airy, elegant dining room elevates the experience. It's perfect for diners who enjoy exploring sophisticated, daring flavors.</p> 	</div> 	</div>`)[0];
+                popup_7c1c7712ae78fa6382ccf4f0b3ab10ca.setContent(html_5852d1b204305eb74b11de23800495fb);
+            
+        
+
+        marker_5ecdc067566290d6bf6e2a7e530c8d19.bindPopup(popup_7c1c7712ae78fa6382ccf4f0b3ab10ca)
+        ;
+
+        
+    
+    
+            marker_5ecdc067566290d6bf6e2a7e530c8d19.bindTooltip(
+                `<div>
+                     Le Coucou
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ecdc067566290d6bf6e2a7e530c8d19.setIcon(icon_0a29d9239baee5bdd2ca94dbc2f57a12);
+            
+    
+            var marker_5d8a6f98a6f13a0305047cd5fb6cf6c9 = L.marker(
+                [32.7812264, -96.8070088],
+                {
+}
+            ).addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var icon_6db3a5dcb9f6eb3ba7d873ec174a7186 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50f2cb063589bb6e0f596ad857b9b0ac = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3d285cc932adffc957bbc0d75494d26f = $(`<div id="html_3d285cc932adffc957bbc0d75494d26f" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">3Eleven Kitchen & Cocktails</h4> 	  <p style="margin:0 0 6px 0;"><strong>311 N Market St #100</strong><br>Dallas, TX</p> 	  <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/dallasites101/3eleven_3FBE1B79-5056-A36A-0A579887AF0AFCFD-3fbe19815056a36_3fbe2289-5056-a36a-0afb2a330fc4c2f0.jpg" alt="3Eleven Kitchen & Cocktails" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">3Eleven pairs scratch-made American dishes with inventive cocktails in a vibrant, modern space. The menu features creative twists on classics, making it ideal for curious diners. Its lively atmosphere adds to the sense of exploration.</p> 	</div> 	</div>`)[0];
+                popup_50f2cb063589bb6e0f596ad857b9b0ac.setContent(html_3d285cc932adffc957bbc0d75494d26f);
+            
+        
+
+        marker_5d8a6f98a6f13a0305047cd5fb6cf6c9.bindPopup(popup_50f2cb063589bb6e0f596ad857b9b0ac)
+        ;
+
+        
+    
+    
+            marker_5d8a6f98a6f13a0305047cd5fb6cf6c9.bindTooltip(
+                `<div>
+                     3Eleven Kitchen & Cocktails
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d8a6f98a6f13a0305047cd5fb6cf6c9.setIcon(icon_6db3a5dcb9f6eb3ba7d873ec174a7186);
+            
+    
+            var marker_e99576a6a06e37fe667425e81513e955 = L.marker(
+                [36.1265479, -115.2012681],
+                {
+}
+            ).addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var icon_d533b0b46999be247c4b408fa0ee6de7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11a9e6ce8f637a4a276b5dd682dfc295 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_933b7559162cccafe7b1c65db2e8da33 = $(`<div id="html_933b7559162cccafe7b1c65db2e8da33" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Sparrow + Wolf</h4> 	  <p style="margin:0 0 6px 0;"><strong>4480 Spring Mountain Rd #100</strong><br>Las Vegas, NV</p> 	  <img src="https://www.gayot.com/images/reviews/sparrow-wolf-interior.jpg" alt="Sparrow + Wolf" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Sparrow + Wolf blends global influences with live-fire cooking to create inventive, boundary-pushing dishes. The menu is bold yet refined, showcasing serious technique and creativity. It's a favorite among culinary-minded locals and chefs.</p> 	</div> 	</div>`)[0];
+                popup_11a9e6ce8f637a4a276b5dd682dfc295.setContent(html_933b7559162cccafe7b1c65db2e8da33);
+            
+        
+
+        marker_e99576a6a06e37fe667425e81513e955.bindPopup(popup_11a9e6ce8f637a4a276b5dd682dfc295)
+        ;
+
+        
+    
+    
+            marker_e99576a6a06e37fe667425e81513e955.bindTooltip(
+                `<div>
+                     Sparrow + Wolf
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e99576a6a06e37fe667425e81513e955.setIcon(icon_d533b0b46999be247c4b408fa0ee6de7);
+            
+    
+            var marker_82e56a377ba1613f093e042a24f579d7 = L.marker(
+                [34.017356, -118.278405],
+                {
+}
+            ).addTo(map_c5e99c81c9c73e6bdeea85acbb4e55ac);
+        
+    
+            var icon_228ff9b1e51ab97da6ccc80e712524ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1be07fe98efd88379e06e8f92994eae8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_eaf671df9cfe83eff95ea149daef92fc = $(`<div id="html_eaf671df9cfe83eff95ea149daef92fc" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Holbox</h4> 	  <p style="margin:0 0 6px 0;"><strong>3655 S Grand Ave C9</strong><br>Los Angeles, CA</p> 	  <img src="https://offloadmedia.feverup.com/secretlosangeles.com/wp-content/uploads/2024/09/20160323/DSC09489-1024x683.jpg" alt="Holbox" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Holbox specializes in Yucatan-style seafood with bold preparations like ceviches, aguachiles, and grilled whole fish. The flavors are vibrant, fresh, and deeply regional. It's a must-visit for diners seeking something truly unique.</p> 	</div> 	</div>`)[0];
+                popup_1be07fe98efd88379e06e8f92994eae8.setContent(html_eaf671df9cfe83eff95ea149daef92fc);
+            
+        
+
+        marker_82e56a377ba1613f093e042a24f579d7.bindPopup(popup_1be07fe98efd88379e06e8f92994eae8)
+        ;
+
+        
+    
+    
+            marker_82e56a377ba1613f093e042a24f579d7.bindTooltip(
+                `<div>
+                     Holbox
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_82e56a377ba1613f093e042a24f579d7.setIcon(icon_228ff9b1e51ab97da6ccc80e712524ee);
+            
+</script>
+</html>

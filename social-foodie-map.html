@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e255289a9f4201c60f408be70900344e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e255289a9f4201c60f408be70900344e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e255289a9f4201c60f408be70900344e = L.map(
+                "map_e255289a9f4201c60f408be70900344e",
+                {
+                    center: [33.899496140000004, -96.87139322],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f2abc44a5a31ee6fd0d3d4a76ddfe8e = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/flamb22/cmnetkc1u001f01s8dpsd8v2m/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmxhbWIyMiIsImEiOiJjbWx0cXJzbGwwMzNsM2xwbmZqaWw2Zjk3In0.Lo4lEcg-rbCpdEAbAzyh2w",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6f2abc44a5a31ee6fd0d3d4a76ddfe8e.addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var marker_c94e83cdd3647556f5b4d47194bcd093 = L.marker(
+                [25.7620008, -80.1889886],
+                {
+}
+            ).addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var icon_f17511e433a26d8c83a3f8ae1ee35aea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f161dba1e9aebb45dfbd134dcf19a630 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_289fc401c0bae36f723c26bad3bcbbf2 = $(`<div id="html_289fc401c0bae36f723c26bad3bcbbf2" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Crazy About You</h4> 	  <p style="margin:0 0 6px 0;"><strong>1155 Brickell Bay Dr PH101</strong><br>Miami, FL</p> 	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIHgc9UC475v2swKFWlU9AJ0-qnawzQd7fGw&s" alt="Crazy About You" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Crazy About You offers waterfront dining with a lively, social atmosphere perfect for groups. The eclectic menu spans Spanish, Italian, and American influences, making it ideal for sharing. Its upbeat energy makes it a go-to for social dining.</p> 	</div> 	</div>`)[0];
+                popup_f161dba1e9aebb45dfbd134dcf19a630.setContent(html_289fc401c0bae36f723c26bad3bcbbf2);
+            
+        
+
+        marker_c94e83cdd3647556f5b4d47194bcd093.bindPopup(popup_f161dba1e9aebb45dfbd134dcf19a630)
+        ;
+
+        
+    
+    
+            marker_c94e83cdd3647556f5b4d47194bcd093.bindTooltip(
+                `<div>
+                     Crazy About You
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c94e83cdd3647556f5b4d47194bcd093.setIcon(icon_f17511e433a26d8c83a3f8ae1ee35aea);
+            
+    
+            var marker_b35d83cc9451f082e6485afefd75bbee = L.marker(
+                [40.7379868, -73.9892758],
+                {
+}
+            ).addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var icon_f0e40ea98a8cd810166b3df87d22c172 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a2f698836dd3db4a19e4c621f81c319 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9db9ca6486ac53b124fc3937c28f95cf = $(`<div id="html_9db9ca6486ac53b124fc3937c28f95cf" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">abc cocina</h4> 	  <p style="margin:0 0 6px 0;"><strong>38 E 19th St</strong><br>New York, NY</p> 	  <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEuSiNrkWFUv6g0Z-M-QECXCLPiL21W9rWm2VICbvsX_pGCT1JzS3GqODaNcFxxh2lrsy-fYcj0_3KS5boDg5_Fbr8ytimoJVjRprvHgbSMzt7cRlphamgFcKC6o3PQl3vqn5Uxcf7rjgY=s1360-w1360-h1020-rw" alt="abc cocina" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">abc cocina serves vibrant Latin-inspired small plates in a stylish, energetic setting. The menu is designed for sharing, and the atmosphere is lively without being pretentious. It's a perfect fit for group dining and social nights out.</p> 	</div> 	</div>`)[0];
+                popup_2a2f698836dd3db4a19e4c621f81c319.setContent(html_9db9ca6486ac53b124fc3937c28f95cf);
+            
+        
+
+        marker_b35d83cc9451f082e6485afefd75bbee.bindPopup(popup_2a2f698836dd3db4a19e4c621f81c319)
+        ;
+
+        
+    
+    
+            marker_b35d83cc9451f082e6485afefd75bbee.bindTooltip(
+                `<div>
+                     abc cocina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b35d83cc9451f082e6485afefd75bbee.setIcon(icon_f0e40ea98a8cd810166b3df87d22c172);
+            
+    
+            var marker_db2c27a70e73c59c3760833433d28dcb = L.marker(
+                [32.7892021, -96.8055857],
+                {
+}
+            ).addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var icon_7f042184b8d80217081204456b20b68a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68fb87baaad9397e3d4a0b8cb66810bc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_960bd822b8c6c59c20e534c5a03ba378 = $(`<div id="html_960bd822b8c6c59c20e534c5a03ba378" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">The Henry</h4> 	  <p style="margin:0 0 6px 0;"><strong>2301 N Akard St Suite 250</strong><br>Dallas, TX</p> 	  <img src="https://lh3.googleusercontent.com/p/AF1QipNYwKGaT8UWwbcs6R5CLVFLbdBbti0l-qLevZ8a=s1360-w1360-h1020-rw" alt="The Henry" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">The Henry is a trendy, social American restaurant with a bright, welcoming atmosphere and a menu built for sharing. From cocktails to comfort-leaning plates, it's ideal for groups. The space is lively, modern, and always buzzing.</p> 	</div> 	</div>`)[0];
+                popup_68fb87baaad9397e3d4a0b8cb66810bc.setContent(html_960bd822b8c6c59c20e534c5a03ba378);
+            
+        
+
+        marker_db2c27a70e73c59c3760833433d28dcb.bindPopup(popup_68fb87baaad9397e3d4a0b8cb66810bc)
+        ;
+
+        
+    
+    
+            marker_db2c27a70e73c59c3760833433d28dcb.bindTooltip(
+                `<div>
+                     The Henry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db2c27a70e73c59c3760833433d28dcb.setIcon(icon_7f042184b8d80217081204456b20b68a);
+            
+    
+            var marker_876ab8570f56570a0ad22134f1a68cb0 = L.marker(
+                [36.169511, -115.140686],
+                {
+}
+            ).addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var icon_879000142d443873841276cc95bfd261 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4250e63f1f2d9b00be39a7cb928e9429 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_321598d07d2ebadeab83bd179c487689 = $(`<div id="html_321598d07d2ebadeab83bd179c487689" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Carson Kitchen</h4> 	  <p style="margin:0 0 6px 0;"><strong>124 S 6th St #100</strong><br>Las Vegas, NV</p> 	  <img src="https://usmenuguide.com/wp-content/uploads/2023/11/carsonkitchenlasvegas15-1024x683.jpeg" alt="Carson Kitchen" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Carson Kitchen offers modern comfort food and creative small plates in a sleek, energetic downtown space. The rooftop patio and shareable menu make it perfect for social dining. It's a favorite for groups looking for great food in a fun setting.</p> 	</div> 	</div>`)[0];
+                popup_4250e63f1f2d9b00be39a7cb928e9429.setContent(html_321598d07d2ebadeab83bd179c487689);
+            
+        
+
+        marker_876ab8570f56570a0ad22134f1a68cb0.bindPopup(popup_4250e63f1f2d9b00be39a7cb928e9429)
+        ;
+
+        
+    
+    
+            marker_876ab8570f56570a0ad22134f1a68cb0.bindTooltip(
+                `<div>
+                     Carson Kitchen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_876ab8570f56570a0ad22134f1a68cb0.setIcon(icon_879000142d443873841276cc95bfd261);
+            
+    
+            var marker_9ece7848b2aa0e9f6edf154f6c1c02d2 = L.marker(
+                [34.03878, -118.23243],
+                {
+}
+            ).addTo(map_e255289a9f4201c60f408be70900344e);
+        
+    
+            var icon_1a52e24839b43f65a02b0c3eff5c3561 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7db5a1069bf24535718a93e23eff5fb = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ac90a3de2fa94e3b2e4f15c3c55d0aed = $(`<div id="html_ac90a3de2fa94e3b2e4f15c3c55d0aed" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Girl & the Goat LA</h4> 	  <p style="margin:0 0 6px 0;"><strong>555-3 Mateo St</strong><br>Los Angeles, CA</p> 	  <img src="https://www.wineandspiritsmagazine.com/wp-content/uploads/2022/01/2201-resto-girlandgoat-cred-anthony-tahlier-1024x768.jpg" alt="Girl & the Goat LA" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Girl & the Goat brings bold, globally inspired share plates to a lively, industrial-chic dining room. The menu encourages exploration and sharing, making it ideal for groups. Its high-energy atmosphere makes every meal feel like an event.</p> 	</div> 	</div>`)[0];
+                popup_f7db5a1069bf24535718a93e23eff5fb.setContent(html_ac90a3de2fa94e3b2e4f15c3c55d0aed);
+            
+        
+
+        marker_9ece7848b2aa0e9f6edf154f6c1c02d2.bindPopup(popup_f7db5a1069bf24535718a93e23eff5fb)
+        ;
+
+        
+    
+    
+            marker_9ece7848b2aa0e9f6edf154f6c1c02d2.bindTooltip(
+                `<div>
+                     Girl & the Goat LA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ece7848b2aa0e9f6edf154f6c1c02d2.setIcon(icon_1a52e24839b43f65a02b0c3eff5c3561);
+            
+</script>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea53519b9f5103002d4f64f1f6686c2b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea53519b9f5103002d4f64f1f6686c2b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea53519b9f5103002d4f64f1f6686c2b = L.map(
+                "map_ea53519b9f5103002d4f64f1f6686c2b",
+                {
+                    center: [33.886439159999995, -96.8862759],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b7727b7c4c38ba5c52e09df8dba6afc6 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/flamb22/cmnetkc1u001f01s8dpsd8v2m/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmxhbWIyMiIsImEiOiJjbWx0cXJzbGwwMzNsM2xwbmZqaWw2Zjk3In0.Lo4lEcg-rbCpdEAbAzyh2w",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b7727b7c4c38ba5c52e09df8dba6afc6.addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var marker_073b27b2cc150530c5ffa8a8aa678917 = L.marker(
+                [25.7632665, -80.1910857],
+                {
+}
+            ).addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var icon_822881fec6143d00af15710ebee7714f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e39784c1ff057bd98da010280d60e11f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fd421bc5db72dcd91a912c2b58cd6b53 = $(`<div id="html_fd421bc5db72dcd91a912c2b58cd6b53" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Claudie</h4> 	  <p style="margin:0 0 6px 0;"><strong>1101 Brickell Ave S-113</strong><br>Miami, FL</p> 	  <img src="https://images.squarespace-cdn.com/content/v1/653820f067951356ec09c800/8c11a7f5-49bf-4b99-b864-6e8a2aba3c1d/CLAUDIE_May_2025_0371-Enhanced-NR-Edit_4K.jpg" alt="Claudie" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Claudie offers refined French-Mediterranean cuisine with meticulous technique and elegant presentation. Its upscale atmosphere and chef-driven menu make it a destination for diners who value precision and craft. Every dish feels intentional and elevated.</p> 	</div> 	</div>`)[0];
+                popup_e39784c1ff057bd98da010280d60e11f.setContent(html_fd421bc5db72dcd91a912c2b58cd6b53);
+            
+        
+
+        marker_073b27b2cc150530c5ffa8a8aa678917.bindPopup(popup_e39784c1ff057bd98da010280d60e11f)
+        ;
+
+        
+    
+    
+            marker_073b27b2cc150530c5ffa8a8aa678917.bindTooltip(
+                `<div>
+                     Claudie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_073b27b2cc150530c5ffa8a8aa678917.setIcon(icon_822881fec6143d00af15710ebee7714f);
+            
+    
+            var marker_9ba886f4275f128aacad4c0a4c75049e = L.marker(
+                [40.7614218, -73.9817558],
+                {
+}
+            ).addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var icon_17ac3b1fe35fc59caefd83b9392412dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dd750a8af1ff55dd08e839f380b357c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_84afd1f4ac73750503ddae0fb7b73e9b = $(`<div id="html_84afd1f4ac73750503ddae0fb7b73e9b" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Le Bernardin</h4> 	  <p style="margin:0 0 6px 0;"><strong>155 W 51st St</strong><br>New York, NY</p> 	  <img src="https://www.le-bernardinprive.com/images/fb.jpg" alt="Le Bernardin" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Le Bernardin is one of the world's most celebrated fine-dining restaurants, renowned for Eric Ripert's masterful seafood preparations. The service, technique, and execution are unmatched, creating a serene, luxurious dining experience. It's the pinnacle of culinary craftsmanship.</p> 	</div> 	</div>`)[0];
+                popup_4dd750a8af1ff55dd08e839f380b357c.setContent(html_84afd1f4ac73750503ddae0fb7b73e9b);
+            
+        
+
+        marker_9ba886f4275f128aacad4c0a4c75049e.bindPopup(popup_4dd750a8af1ff55dd08e839f380b357c)
+        ;
+
+        
+    
+    
+            marker_9ba886f4275f128aacad4c0a4c75049e.bindTooltip(
+                `<div>
+                     Le Bernardin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ba886f4275f128aacad4c0a4c75049e.setIcon(icon_17ac3b1fe35fc59caefd83b9392412dd);
+            
+    
+            var marker_a3fca990c3eac8da9139c0ea430a9c2d = L.marker(
+                [32.7471258, -96.8279412],
+                {
+}
+            ).addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var icon_7be3403d692e8c8646a85e1e0dd4fd24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_478895053b4ddd0daa20a5bde42ccad1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a83d6c79b8428fa7e237f62b8f5870a4 = $(`<div id="html_a83d6c79b8428fa7e237f62b8f5870a4" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Written by the Seasons</h4> 	  <p style="margin:0 0 6px 0;"><strong>380 Melba St</strong><br>Dallas, TX</p> 	  <img src="https://14fc423a4c97ea6ac2e5.cdn6.editmysite.com/uploads/b/14fc423a4c97ea6ac2e5cfbbef2647d5a957f384248b668e610de4e39a1e345d/bishop%20arts_1740163973.png" alt="Written by the Seasons" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Written by the Seasons focuses on seasonal, chef-driven New American cuisine with beautifully composed plates. The intimate space and thoughtful menu highlight technique and ingredient quality. It's a standout for diners who appreciate culinary artistry.</p> 	</div> 	</div>`)[0];
+                popup_478895053b4ddd0daa20a5bde42ccad1.setContent(html_a83d6c79b8428fa7e237f62b8f5870a4);
+            
+        
+
+        marker_a3fca990c3eac8da9139c0ea430a9c2d.bindPopup(popup_478895053b4ddd0daa20a5bde42ccad1)
+        ;
+
+        
+    
+    
+            marker_a3fca990c3eac8da9139c0ea430a9c2d.bindTooltip(
+                `<div>
+                     Written by the Seasons
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3fca990c3eac8da9139c0ea430a9c2d.setIcon(icon_7be3403d692e8c8646a85e1e0dd4fd24);
+            
+    
+            var marker_56bd996b9e0f604d939429f3784d1bf9 = L.marker(
+                [36.1265479, -115.2012681],
+                {
+}
+            ).addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var icon_682550bf93983c20100bb82162e099a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07525414417f360ef93d499c4dd3ea43 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3e94900416f36a8784efab8892ebade3 = $(`<div id="html_3e94900416f36a8784efab8892ebade3" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Sparrow + Wolf</h4> 	  <p style="margin:0 0 6px 0;"><strong>4480 Spring Mountain Rd #100</strong><br>Las Vegas, NV</p> 	  <img src="https://venue-media.eventup.com/resized/venue/sparrow-wolf/c0ee.1920x1080.jpg" alt="Sparrow + Wolf" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Sparrow + Wolf blends global influences with live-fire cooking to create inventive, boundary-pushing dishes. The menu is bold yet refined, showcasing serious technique and creativity. It's a favorite among culinary-minded locals and chefs.</p> 	</div> 	</div>`)[0];
+                popup_07525414417f360ef93d499c4dd3ea43.setContent(html_3e94900416f36a8784efab8892ebade3);
+            
+        
+
+        marker_56bd996b9e0f604d939429f3784d1bf9.bindPopup(popup_07525414417f360ef93d499c4dd3ea43)
+        ;
+
+        
+    
+    
+            marker_56bd996b9e0f604d939429f3784d1bf9.bindTooltip(
+                `<div>
+                     Sparrow + Wolf
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56bd996b9e0f604d939429f3784d1bf9.setIcon(icon_682550bf93983c20100bb82162e099a7);
+            
+    
+            var marker_fe5e127d042b9335ca5d2166585dffdd = L.marker(
+                [34.0338338, -118.2293287],
+                {
+}
+            ).addTo(map_ea53519b9f5103002d4f64f1f6686c2b);
+        
+    
+            var icon_03f16f030433ca275f3a15bcdb4fb755 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_393138b469bcf7df1d9862fb83624a55 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d53835682e2f40af401ebc3e101a74de = $(`<div id="html_d53835682e2f40af401ebc3e101a74de" style="width: 100.0%; height: 100.0%;"> 	<div style="width:280px; font-family: Arial, sans-serif;"> 	  <h4 style="margin:0 0 6px 0;">Bestia</h4> 	  <p style="margin:0 0 6px 0;"><strong>2121 E 7th Pl</strong><br>Los Angeles, CA</p> 	  <img src="https://bestiala.com/wp-content/uploads/2025/08/2025.08.05-Bestia_July_Joseph-Weaver_D122-copy.jpg" alt="Bestia" style="width:100%; height:auto; border-radius:8px; margin:4px 0 8px 0;"> 	  <p style="margin:0; font-size:13px; line-height:1.4;">Bestia is an acclaimed Italian restaurant known for its handmade pastas, wood-fired dishes, and industrial-chic setting. The kitchen's precision and creativity have made it a cornerstone of LA dining. Every plate reflects deep technique and bold flavor.</p> 	</div> 	</div>`)[0];
+                popup_393138b469bcf7df1d9862fb83624a55.setContent(html_d53835682e2f40af401ebc3e101a74de);
+            
+        
+
+        marker_fe5e127d042b9335ca5d2166585dffdd.bindPopup(popup_393138b469bcf7df1d9862fb83624a55)
+        ;
+
+        
+    
+    
+            marker_fe5e127d042b9335ca5d2166585dffdd.bindTooltip(
+                `<div>
+                     Bestia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe5e127d042b9335ca5d2166585dffdd.setIcon(icon_03f16f030433ca275f3a15bcdb4fb755);
+            
+</script>
+</html>
