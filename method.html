@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Methodology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Research Methodology</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="profiles.html">Profiles</a>
+            <div class="nav-dropdown">
+                <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-label="Open Reflection menu">Reflection</button>
+                <div class="nav-dropdown-content">
+                    <a href="literature.html">Literature Review</a>
+                    <a href="method.html">Research Methodology</a>
+                    <a href="findings.html">Analysis & Findings</a>
+                    <a href="conclusion.html">Conclusion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reflection-section method-section">
+            <h2>Research Methodology</h2>
+            <p>Our methodology was designed to directly address the research question: How can personalized taste profiles improve the user experience of restaurant discovery tools? To answer this, we developed a multi‑step process involving data collection, data refinement, persona construction, geospatial mapping, and interface design.
+
+            <h2>Data Collection</h2>
+            We began by researching existing taste profiles and dining personas through food blogs, UX articles, and restaurant recommendation guides. These sources helped us identify common behavioral patterns—such as trend‑seeking, comfort‑driven dining, or culinary purism—which we refined and adapted based on our own experiences. We then curated restaurant recommendations for each profile across five major U.S. foodie hubs: Miami, New York, Dallas, Las Vegas, and Los Angeles. These cities were chosen because they represent diverse culinary cultures and offer robust restaurant ecosystems suitable for persona‑based mapping.
+
+            <h2>Data Management</h2>
+            We compiled restaurant names, addresses, image URLs, and descriptions into Google Sheets, then generated CSV files for each taste profile. Using Mapbox’s geocoding tools, we obtained latitude and longitude coordinates for all 30 restaurants. Each taste profile received its own CSV file to support the creation of six separate map layers.
+
+            <h2>Mapping & Technical Tools</h2>
+            We used Mapbox Studio to upload each CSV as a tileset and created individual map styles for each taste profile. JavaScript, HTML, and CSS were used in VS Code to embed the maps into our site and customize their appearance. GitHub was used for version control and collaboration.
+
+            <h2>Project Refinement</h2>
+            To keep the project manageable, we limited our scope to five cities and six taste profiles. This allowed us to demonstrate the concept clearly without overwhelming the user or diluting the quality of the curated recommendations. Debugging in VS Code and refining the dataset were ongoing parts of the process, especially as we ensured consistency across descriptions, coordinates, and image assets.</p>
+
+            <h2 class="method-heading">AI Tool Usage</h2>
+            AI tools played a meaningful but controlled role in our workflow. We used AI primarily for organizational support, data structuring, and descriptive writing, not for decision‑making or curation. For example, AI helped format CSV files, generate consistent restaurant descriptions, and troubleshoot code structure in JavaScript and HTML. We also used AI to streamline repetitive tasks, such as verifying addresses.
+            However, we made all final decisions about taste profiles, restaurant selections, and map design ourselves. AI was most effective when used as a collaborator for efficiency rather than as a replacement for human judgment. This process highlighted both the possibilities and limitations of AI: it accelerated technical tasks and improved clarity in documentation, but it required careful oversight to ensure accuracy and alignment with our project goals.
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Taste Explorer Project</p>
+    </footer>
+</body>
+</html>
