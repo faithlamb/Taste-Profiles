@@ -185,7 +185,13 @@ if (currentPage.includes("quiz.html")) {
 // ------------------------------
 if (currentPage.includes("results.html")) {
     const scoreList = document.getElementById("score-list");
-    const scores = JSON.parse(localStorage.getItem("quizScores"));
+    const scores = JSON.parse(localStorage.getItem("quizScores")) || {};
+
+    if (!Object.keys(scores).length) {
+        const li = document.createElement("li");
+        li.textContent = "No quiz results found yet. Take the quiz to see your scores.";
+        scoreList.appendChild(li);
+    }
 
     for (const profile in scores) {
         const li = document.createElement("li");
@@ -193,8 +199,10 @@ if (currentPage.includes("results.html")) {
         // Convert profile name to matching HTML file
         const fileName = profile.toLowerCase().replace(/ /g, "-") + ".html";
 
+        const percentage = Math.round((scores[profile] / 10) * 100);
+
         li.innerHTML = `
-            <a href="${fileName}">${profile}</a>: ${scores[profile]} points
+            <a href="${fileName}">${profile}</a>: ${percentage}%
         `;
 
         scoreList.appendChild(li);
