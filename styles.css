@@ -311,6 +311,21 @@ footer {
     margin: 5px 0;
 }
 
+.quiz-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+}
+
+.quiz-main #quiz-container {
+    width: 100%;
+}
+
+.quiz-main #submit-btn {
+    display: block;
+    margin: 20px auto 0;
+}
+
 #submit-btn {
     padding: 12px 20px;
     background: #ff7043;
